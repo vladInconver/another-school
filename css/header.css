@@ -50,6 +50,8 @@
         max-width: 1200px;
         margin: 0 auto;
         padding: 0;
+        position: relative;
+        z-index: 1;
     }
     .header-buttons_line-logo-icon,
     .header-buttons_line-buttons-whatsapp{

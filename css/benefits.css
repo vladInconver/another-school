@@ -1,0 +1,98 @@
+.benefits-section{
+    position: relative;
+    z-index: 1;
+}
+.dark-section{
+    background: #000000;
+    margin-top: 40px;
+    padding: 40px 0;
+}
+.dark-section-title{
+    color: #FFFFFF;
+}
+.dark-section-title:after{
+    content: "";
+    background: linear-gradient(90deg, #833BEE 3.62%, #2EAFFF 104.23%), #D9D9D9;
+    border-radius: 27px;
+    display: block;
+    margin: 5px 0 0 0;
+    width: 92px;
+    height: 5px;
+}
+.dark-section-text{
+    margin-top: 10px;
+    color: #FFFFFF;
+}
+.benefits-section_content{
+    margin-top: 40px;
+}
+.benefits-section_list-item{
+    margin: 15px 0 20px 0;
+}
+.benefits-section_list-counter{
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+    background: linear-gradient(90deg, #833BEE 3.62%, #2EAFFF 104.23%), #000000;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    position: relative;
+    margin-right: 20px;
+}
+.benefits-section_list-counter:after{
+    content: "";
+    position: absolute;
+    width: 13px;
+    height: 2px;
+    right: 15px;
+    bottom: -10px;
+    background: linear-gradient(90deg, #833BEE 3.62%, #2EAFFF 104.23%), #D9D9D9;
+    border-radius: 16px;
+    transform: rotate(-90deg);
+}
+.benefits-section_list-item:last-child .benefits-section_list-counter:after{
+    display: none
+}
+@media screen and (min-width:768px) {
+    .dark-section{
+        padding: 80px 0;
+        position: relative;
+        overflow: hidden;
+    }
+    .purple-dark-left{
+        bottom: 0;
+        left: 0;
+    }
+    .purple-dark-right{
+        bottom: 0;
+        right: 0;
+    }
+    .benefits-section_content{
+        margin-top: 80px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .benefits-section_list-counter{
+        font-weight: 500;
+        font-size: 80px;
+        line-height: 97px;
+        letter-spacing: 0.2px;
+    }
+    .benefits-section_list-counter:after{
+        width: 30px;
+        height: 3px;
+        right: 28px;
+        bottom: -15px;
+    }
+    .benefits-section_list-item{
+        margin: 15px 0 40px 0;
+    }
+    .benefits-section_title{
+        max-width: 415px;
+    }
+    .benefits-section_list-wrapper{
+        max-width: 550px;
+    }
+}

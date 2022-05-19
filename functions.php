@@ -13,7 +13,7 @@ if ( ! defined( '_S_VERSION' ) ) {
 if ( ! defined( 'TMEME_URI' ) ) {
     define('_S_TMEME_URI', get_stylesheet_directory_uri());
 }
-
+add_filter('wpcf7_autop_or_not', '__return_false');
 /**
  * Sets up theme defaults and registers support for various WordPress features.
  *
@@ -144,11 +144,18 @@ function another_school_scripts() {
     wp_enqueue_style( 'another-school-style',  _S_TMEME_URI . "/style.css", array(), _S_VERSION );
     wp_enqueue_style( 'another-school-style-header', _S_TMEME_URI . "/css/header.css", array(), _S_VERSION );
     wp_enqueue_style( 'another-school-style-hero', _S_TMEME_URI . "/css/hero.css", array(), _S_VERSION );
+    wp_enqueue_style( 'another-school-style-benefits', _S_TMEME_URI . "/css/benefits.css", array(), _S_VERSION );
+    wp_enqueue_style( 'another-school-style-form', _S_TMEME_URI . "/css/form.css", array(), _S_VERSION );
 	wp_style_add_data( 'another-school-style', 'rtl', 'replace' );
 
-	wp_enqueue_script( 'another-school-navigation',  _S_TMEME_URI . '/js/navigation.js', array(), _S_VERSION, true );
+    wp_enqueue_script( 'another-school-script-masked', _S_TMEME_URI . '/js/jquery.mask.min.js', array('jquery-core'), _S_VERSION, true );
+    wp_enqueue_script( 'another-school-script-custom', _S_TMEME_URI . '/js/custom.js', array('jquery-core', 'another-school-script-masked'), _S_VERSION, true );
 
-	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
+
+
+
+
+    if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
