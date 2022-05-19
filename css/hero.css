@@ -1,0 +1,68 @@
+.hero-image{
+    width: 100%;
+    height: 159px;
+    background: url("../img/hero.webp") center center no-repeat;
+    border-radius: 10px;
+    margin: 15px 0;
+}
+.site-main_hero-content{
+    width: 232px;
+    color: #000000;
+}
+.site-main_hero-title{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 19px;
+    line-height: 145%;
+    margin-bottom: 10px;
+}
+.site-main_hero-text{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 155%;
+    margin-bottom: 10px;
+}
+.site-main_hero-button{
+    padding: 14px 15px;
+    font-size: 10px;
+    display: inline-block;
+}
+@media screen and (min-width:768px) {
+    .site-main_hero{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 40px;
+        position: relative;
+        z-index: 1;
+    }
+    .site-main_hero-content{
+        width: 49%;
+        max-width: 554px;
+    }
+    .hero-image {
+        width: 49%;
+        height: 370px;
+        background: url("../img/hero-desk.webp") center center no-repeat;
+        border-radius: 10px;
+        margin: 0;
+    }
+
+    .site-main_hero-title{
+        font-size: 43px;
+        line-height: 140%;
+        letter-spacing: 0.2px;
+        margin-bottom: 15px;
+    }
+    .site-main_hero-text{
+        font-size: 16px;
+        line-height: 170%;
+        margin-bottom: 20px;
+    }
+    .site-main_hero-button{
+        padding: 24px 30px;
+        font-size: 14px;
+    }
+}

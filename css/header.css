@@ -1,0 +1,105 @@
+.container-glob{
+    padding: 0 15px;
+    font-family: 'Roboto';
+}
+.mob-hide{
+    display: none;
+}
+.dis-f{
+    display: flex;
+}
+.space-between{
+    justify-content: space-between;
+}
+.align-center{
+    align-items: center;
+}
+.header-buttons_line-logo img,
+.header-buttons_line-buttons-phone {
+    margin: 0 10px 0 0;
+}
+.header-buttons_line{
+    padding-top: 20px;
+}
+.buttons-gradient:hover{
+    text-decoration: none;
+    color: #ffffff;
+}
+.buttons-gradient{
+    background: linear-gradient(90deg, #833BEE 3.62%, #2EAFFF 104.23%), #D9D9D9;
+    border-radius: 5px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #ffffff;
+    text-decoration: none;
+}
+@media screen and (min-width:768px) {
+    .desk-hide{
+        display: none;
+    }
+    .mob-hide{
+        display: block;
+    }
+    .header-buttons_line{
+        padding: 40px 0 0;
+    }
+    .container-glob{
+        width: 95%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0;
+    }
+    .header-buttons_line-logo-icon,
+    .header-buttons_line-buttons-whatsapp{
+        width: 42px;
+        height: 42px;
+        margin-right: 10px;
+    }
+    .header-buttons_line-logo-name{
+        height: 24px;
+    }
+    .header-buttons_line-buttons a {
+        max-height: 42px;
+    }
+    .header-buttons_line-buttons .header-buttons_line-buttons-phone_desk {
+        display: flex;
+        flex-direction: column;
+        margin-right: 20px;
+    }
+    .header-buttons_line-buttons-phone_num{
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 25px;
+        color: #000000;
+        text-decoration: none;
+    }
+    .header-buttons_line-buttons-phone_text{
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 15px;
+        background: linear-gradient(90deg, #833BEE 3.62%, #2EAFFF 104.23%), #BABABA;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+    }
+    .header-buttons_line-buttons-question{
+        padding: 12px 20px;
+    }
+    .decoration-elips{
+        position: absolute;
+        z-index: 0;
+    }
+    .decoration-elips.purple-top-left{
+        left: 0;
+        top: 0;
+    }
+    .decoration-elips.purple-top-right{
+        right: 0;
+        top: 25%;
+    }
+}
